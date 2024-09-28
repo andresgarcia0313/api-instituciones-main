@@ -1,0 +1,133 @@
+{
+  "info": {
+    "name": "Instituciones API",
+    "_postman_id": "d9fa18da-6ad5-4bcb-8e15-948bb93dd5b7",
+    "description": "Colección para realizar pruebas de la API de Instituciones",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Obtener todas las instituciones",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/instituciones",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "instituciones"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear una nueva institución",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Instituto ABC\",\n  \"direccion\": \"Calle 123, Ciudad\",\n  \"telefono\": \"555-5555\",\n  \"email\": \"contacto@institutoabc.edu\",\n  \"iddepartamento\": \"651234abcd12345678901234\",\n  \"idmunicipio\": \"7654321dcba12345678901234\",\n  \"idsecretaria\": \"908123abcd12345678901234\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/instituciones",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "instituciones"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Obtener una institución por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/instituciones/651234abcd12345678901234",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "instituciones",
+            "651234abcd12345678901234"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar una institución",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Instituto XYZ\",\n  \"direccion\": \"Avenida 456, Ciudad\",\n  \"telefono\": \"666-6666\",\n  \"email\": \"info@institutoxyz.edu\",\n  \"iddepartamento\": \"651234abcd12345678901234\",\n  \"idmunicipio\": \"7654321dcba12345678901234\",\n  \"idsecretaria\": \"908123abcd12345678901234\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/instituciones/651234abcd12345678901234",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "instituciones",
+            "651234abcd12345678901234"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar una institución",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/instituciones/651234abcd12345678901234",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "instituciones",
+            "651234abcd12345678901234"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
